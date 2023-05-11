@@ -4,12 +4,22 @@ public class EntradaDatos {
 	
 	int metros(){
 		Scanner n1 = new Scanner(System.in);
-		System.out.println("Introducir los metros cuadrados ");
+		System.out.println("Introducir los metros de cable necesarios ");
 		int a;
 		a = n1.nextInt();
 				
 		return a;		
 	}
+	
+	int cables(){
+		Scanner n2 = new Scanner(System.in);
+		System.out.println("Introducir el numero de cables que vamos a utilizar ");
+		int b;
+		b = n2.nextInt();
+				
+		return b;		
+	}
+	
 	
 	
 	String Radiocomunicaciones() {
@@ -45,9 +55,9 @@ public class EntradaDatos {
 		selector = n2.nextInt();
 		
 		switch(selector) {
-		case 1: estilo="moderno";
+		case 1: estilo="Satelites";
 				return estilo;
-		case 2: estilo="chipendale";
+		case 2: estilo="Torres de emision";
 				return estilo;
 		default: return "estilo no conocido";
 		
@@ -57,14 +67,14 @@ public class EntradaDatos {
 		}
 	
 	String Sistemasdetransmision() {
-		Scanner n2 = new Scanner(System.in);
+		Scanner n3 = new Scanner(System.in);
 		System.out.println("Introducir el tipo de sistema:"
 				+ "1: electrica "
 				+ "2: optica"
 				+ "3: radiofrecuencia");
 		String estilo;
 		int selector;
-		selector = n2.nextInt();
+		selector = n3.nextInt();
 		
 		switch(selector) {
 		case 1: estilo="electrica";
